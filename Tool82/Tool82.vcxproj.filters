@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="00. MainFrame">
+      <UniqueIdentifier>{0b8ae4eb-1181-4007-a644-15e8001e7824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. View">
+      <UniqueIdentifier>{de2249ad-b634-432b-a731-1809168600a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99. Default">
+      <UniqueIdentifier>{62a8d20f-f7d5-4281-ba68-55e36cd03a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99. Default\리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="99. Default\소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="99. Default\헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="02. Mgr">
+      <UniqueIdentifier>{b0aec850-09ea-480d-8f92-288018b65c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Mgr\00. Device">
+      <UniqueIdentifier>{5c4f6595-5fb5-44e0-8dec-bb0e9f9a2d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Mgr\TextureMgr">
+      <UniqueIdentifier>{6c0e1ec1-e08e-4d3d-bc7f-fcb0c79edcea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Etc">
+      <UniqueIdentifier>{a9852006-a7e2-4a44-9a4d-6f409fdc3840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Etc\00. Texture">
+      <UniqueIdentifier>{398bb076-5315-4660-aadd-48df00d37a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Etc\00. Texture\SingleTexture">
+      <UniqueIdentifier>{09c64b81-63c0-461b-83d8-da0c3015638d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Etc\00. Texture\MultiTexture">
+      <UniqueIdentifier>{3de4ef3c-76f6-4574-b1d7-fd2a7c259070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. View\MyForm">
+      <UniqueIdentifier>{7200d9db-5ba1-4deb-9ce3-9bac395dc48d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Etc\01. BackGround">
+      <UniqueIdentifier>{4553b49b-606f-4496-9a26-e0ca1e44547d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tool82.h">
+      <Filter>99. Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>99. Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>99. Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool82Doc.h">
+      <Filter>99. Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>99. Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>00. MainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool82View.h">
+      <Filter>01. View</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>02. Mgr\00. Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>98. Etc\00. Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleTexture.h">
+      <Filter>98. Etc\00. Texture\SingleTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiTexture.h">
+      <Filter>98. Etc\00. Texture\MultiTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureMgr.h">
+      <Filter>02. Mgr\TextureMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <Filter>01. View\MyForm</Filter>
+    </ClInclude>
+    <ClInclude Include="BackGround.h">
+      <Filter>98. Etc\01. BackGround</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tool82.cpp">
+      <Filter>99. Default\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>99. Default\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool82Doc.cpp">
+      <Filter>99. Default\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>00. MainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool82View.cpp">
+      <Filter>01. View</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>02. Mgr\00. Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>98. Etc\00. Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleTexture.cpp">
+      <Filter>98. Etc\00. Texture\SingleTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiTexture.cpp">
+      <Filter>98. Etc\00. Texture\MultiTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureMgr.cpp">
+      <Filter>02. Mgr\TextureMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm.cpp">
+      <Filter>01. View\MyForm</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGround.cpp">
+      <Filter>98. Etc\01. BackGround</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tool82.rc">
+      <Filter>99. Default\리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Tool82.rc2">
+      <Filter>99. Default\리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Tool82Doc.ico">
+      <Filter>99. Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Tool82.ico">
+      <Filter>99. Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>99. Default\리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>99. Default</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="00.MainGame">
+      <UniqueIdentifier>{853b6e8f-0b61-42b2-8fd7-56c1d2c48909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene">
+      <UniqueIdentifier>{be256dc7-026f-46f8-a738-dac3c8e6dd3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\01. Logo">
+      <UniqueIdentifier>{6ba4fd9d-08fb-44fb-934c-39c17a425e51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\02. Menu">
+      <UniqueIdentifier>{665ac2bb-fb11-4ec8-bc0c-7b829724fa9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr">
+      <UniqueIdentifier>{b30fae68-9451-47a9-947f-b477943f26d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\00. Device">
+      <UniqueIdentifier>{2fbb486a-a622-4701-a3e0-7021bfb74585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\01. TextureMgr">
+      <UniqueIdentifier>{752eb0e6-1953-4c72-b89a-9a7a4708cb1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Etc">
+      <UniqueIdentifier>{82c57fd6-dc6f-4bd3-adb3-4f5b62e8c6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Etc\00.Texture">
+      <UniqueIdentifier>{06517f3a-b38b-4a23-a758-28b21d8d6763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Etc\00.Texture\SingleTexture">
+      <UniqueIdentifier>{addaf73d-d429-4bec-bd68-fac60ae62c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Etc\00.Texture\MultiTexture">
+      <UniqueIdentifier>{6fe1b83d-6b11-48bc-9875-fc39f6530842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\02. SceneMgr">
+      <UniqueIdentifier>{4da425f0-cffd-498a-b38e-86c470cf4335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\03. TimeMgr">
+      <UniqueIdentifier>{3aa6cb8c-abf9-4926-9802-e8e4d2409693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\04. KeyMgr">
+      <UniqueIdentifier>{c642dd2c-f6d0-4566-aa5c-56f45bc5b8dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj">
+      <UniqueIdentifier>{e3a919b8-1fdc-48ea-8f9a-5025b13bae86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Default">
+      <UniqueIdentifier>{23105cf5-500c-4bfe-a1ab-c71095388bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Default\리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="99.Default\소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="99.Default\헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="02.Mgr\05. CollisionMgr">
+      <UniqueIdentifier>{a92035d0-ff6e-4acd-92bb-18511c497370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\03. Game">
+      <UniqueIdentifier>{fdb8451f-ddcd-4616-bac3-394bb3be8916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\03. Game\00. Stage">
+      <UniqueIdentifier>{e685c949-4a3a-4812-89e1-d95d01741cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\03. Game\00. Stage\00. Lobby">
+      <UniqueIdentifier>{bc4de6b3-c540-4c9c-95b0-741d51169557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\03. Game\00. Stage\01. Stage1">
+      <UniqueIdentifier>{4537a49e-1b92-4431-ba70-d75060cefdba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\03. Game\00. Stage\02. Stage2">
+      <UniqueIdentifier>{258843a5-c010-48e8-b80b-3956d5f47771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\03. Game\00. Stage\03. Stage3">
+      <UniqueIdentifier>{f4ceddc2-95aa-479e-8f6f-28d8a9bf6f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\02. Monster">
+      <UniqueIdentifier>{68058226-be75-4971-bb2d-db65eac1c305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\03. Track">
+      <UniqueIdentifier>{c3f1a5e0-bcca-4bba-9420-bbe260b6e315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\00. Ibb">
+      <UniqueIdentifier>{6bc878dd-4c6f-4af9-865c-9822dbbc9c67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\01. Obb">
+      <UniqueIdentifier>{24da974b-cc0d-460c-891c-bba7e30e2095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\04. Hole">
+      <UniqueIdentifier>{6c951b77-116c-4f41-adb9-8213c500094c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\05. IHole">
+      <UniqueIdentifier>{086c80e4-f8fb-4c47-8861-0b6a8f395865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\06. OHole">
+      <UniqueIdentifier>{48843a32-9069-47ba-8e9e-d156c25200bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\07. Jump">
+      <UniqueIdentifier>{63159a65-347a-47be-a8e5-b4a745ae616e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\08. Maprect">
+      <UniqueIdentifier>{93723235-ccbc-435a-8042-fa6995a59dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\09. Backobj">
+      <UniqueIdentifier>{59b116b6-b279-4da5-ac96-c5d3cfe4641a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\10. Support">
+      <UniqueIdentifier>{eaabfbf0-ddbf-4251-a180-66c44ba48c9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\06. SoundMgr">
+      <UniqueIdentifier>{0c13bb40-4eda-4339-a60d-821572709cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Obj\11. Bubble">
+      <UniqueIdentifier>{bdaabefe-faef-448e-8580-90f3494534bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>99.Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IBBandOBB.h">
+      <Filter>99.Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>00.MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>01.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>01.Scene\01. Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>02.Mgr\00. Device</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr.h">
+      <Filter>02.Mgr\02. SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMenu.h">
+      <Filter>01.Scene\02. Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeMgr.h">
+      <Filter>02.Mgr\03. TimeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyMgr.h">
+      <Filter>02.Mgr\04. KeyMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureMgr.h">
+      <Filter>02.Mgr\01. TextureMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>98.Etc\00.Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleTexture.h">
+      <Filter>98.Etc\00.Texture\SingleTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiTexture.h">
+      <Filter>98.Etc\00.Texture\MultiTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj.h">
+      <Filter>03. Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>03. Obj\02. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionMgr.h">
+      <Filter>02.Mgr\05. CollisionMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>01.Scene\03. Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>01.Scene\03. Game\00. Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Lobby.h">
+      <Filter>01.Scene\03. Game\00. Stage\00. Lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage1.h">
+      <Filter>01.Scene\03. Game\00. Stage\01. Stage1</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage2.h">
+      <Filter>01.Scene\03. Game\00. Stage\02. Stage2</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage3.h">
+      <Filter>01.Scene\03. Game\00. Stage\03. Stage3</Filter>
+    </ClInclude>
+    <ClInclude Include="Ibb.h">
+      <Filter>03. Obj\00. Ibb</Filter>
+    </ClInclude>
+    <ClInclude Include="Obb.h">
+      <Filter>03. Obj\01. Obb</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>99.Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Track.h">
+      <Filter>03. Obj\03. Track</Filter>
+    </ClInclude>
+    <ClInclude Include="Hole.h">
+      <Filter>03. Obj\04. Hole</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>99.Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IHole.h">
+      <Filter>03. Obj\05. IHole</Filter>
+    </ClInclude>
+    <ClInclude Include="OHole.h">
+      <Filter>03. Obj\06. OHole</Filter>
+    </ClInclude>
+    <ClInclude Include="Jump.h">
+      <Filter>03. Obj\07. Jump</Filter>
+    </ClInclude>
+    <ClInclude Include="Maprect.h">
+      <Filter>03. Obj\08. Maprect</Filter>
+    </ClInclude>
+    <ClInclude Include="Backobj.h">
+      <Filter>03. Obj\09. Backobj</Filter>
+    </ClInclude>
+    <ClInclude Include="Support.h">
+      <Filter>03. Obj\10. Support</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundMgr.h">
+      <Filter>02.Mgr\06. SoundMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Bubble.h">
+      <Filter>03. Obj\11. Bubble</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>99.Default\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="IBBandOBB.cpp">
+      <Filter>99.Default\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>00.MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>01.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>01.Scene\01. Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>02.Mgr\00. Device</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr.cpp">
+      <Filter>02.Mgr\02. SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMenu.cpp">
+      <Filter>01.Scene\02. Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeMgr.cpp">
+      <Filter>02.Mgr\03. TimeMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyMgr.cpp">
+      <Filter>02.Mgr\04. KeyMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureMgr.cpp">
+      <Filter>02.Mgr\01. TextureMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>98.Etc\00.Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleTexture.cpp">
+      <Filter>98.Etc\00.Texture\SingleTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiTexture.cpp">
+      <Filter>98.Etc\00.Texture\MultiTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj.cpp">
+      <Filter>03. Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>03. Obj\02. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionMgr.cpp">
+      <Filter>02.Mgr\05. CollisionMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>01.Scene\03. Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>01.Scene\03. Game\00. Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby.cpp">
+      <Filter>01.Scene\03. Game\00. Stage\00. Lobby</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage1.cpp">
+      <Filter>01.Scene\03. Game\00. Stage\01. Stage1</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage2.cpp">
+      <Filter>01.Scene\03. Game\00. Stage\02. Stage2</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage3.cpp">
+      <Filter>01.Scene\03. Game\00. Stage\03. Stage3</Filter>
+    </ClCompile>
+    <ClCompile Include="Track.cpp">
+      <Filter>03. Obj\03. Track</Filter>
+    </ClCompile>
+    <ClCompile Include="Ibb.cpp">
+      <Filter>03. Obj\00. Ibb</Filter>
+    </ClCompile>
+    <ClCompile Include="Obb.cpp">
+      <Filter>03. Obj\01. Obb</Filter>
+    </ClCompile>
+    <ClCompile Include="Hole.cpp">
+      <Filter>03. Obj\04. Hole</Filter>
+    </ClCompile>
+    <ClCompile Include="IHole.cpp">
+      <Filter>03. Obj\05. IHole</Filter>
+    </ClCompile>
+    <ClCompile Include="OHole.cpp">
+      <Filter>03. Obj\06. OHole</Filter>
+    </ClCompile>
+    <ClCompile Include="Jump.cpp">
+      <Filter>03. Obj\07. Jump</Filter>
+    </ClCompile>
+    <ClCompile Include="Maprect.cpp">
+      <Filter>03. Obj\08. Maprect</Filter>
+    </ClCompile>
+    <ClCompile Include="Backobj.cpp">
+      <Filter>03. Obj\09. Backobj</Filter>
+    </ClCompile>
+    <ClCompile Include="Support.cpp">
+      <Filter>03. Obj\10. Support</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundMgr.cpp">
+      <Filter>02.Mgr\06. SoundMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Bubble.cpp">
+      <Filter>03. Obj\11. Bubble</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IBBandOBB.rc">
+      <Filter>99.Default\리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>99.Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="IBBandOBB.ico">
+      <Filter>99.Default\리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

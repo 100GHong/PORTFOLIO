@@ -1,0 +1,17 @@
+MAP|Fixed|15|..\Texture\Stage\MAP\Fixed\fixed_0%d.png
+MAP|Jump|1|..\Texture\Stage\MAP\Jump\jump_0%d.png
+MAP|Hole|3|..\Texture\Stage\MAP\Hole\hole_0%d.png
+MAP|IHole|1|..\Texture\Stage\MAP\IHole\ihole_0%d.png
+MAP|OHole|1|..\Texture\Stage\MAP\OHole\ohole_0%d.png
+MAP|Map|2|..\Texture\Stage\MAP\Map\map_0%d.png
+MAP|Track|2|..\Texture\Stage\MAP\Track\track_0%d.png
+MONSTER|Enemy|2|..\Texture\Stage\MONSTER\Enemy\monster_0%d.png
+MONSTER|Shadow|2|..\Texture\Stage\MONSTER\Shadow\shadow_0%d.png
+MONSTER|Support|3|..\Texture\Stage\MONSTER\Support\support_0%d.png
+PLAYER|I_move|8|..\Texture\Stage\PLAYER\I_move\ibb_move_0%d.png
+PLAYER|I_stand|1|..\Texture\Stage\PLAYER\I_stand\IBB_STAND_%d.png
+PLAYER|I_jump|1|..\Texture\Stage\PLAYER\I_jump\jump_0%d.png
+PLAYER|O_stand|1|..\Texture\Stage\PLAYER\O_stand\OBB_STAND_%d.png
+PLAYER|O_move|8|..\Texture\Stage\PLAYER\O_move\obb_move_0%d.png
+PLAYER|O_jump|1|..\Texture\Stage\PLAYER\O_jump\jump_0%d.png
+EFFECT|Mouse|1|..\Texture\EFFECT\Mouse\mouse_0%d.png
