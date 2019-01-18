@@ -121,6 +121,9 @@
     <Filter Include="03. Obj\11. Bubble">
       <UniqueIdentifier>{bdaabefe-faef-448e-8580-90f3494534bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02.Mgr\07. NetworMgr">
+      <UniqueIdentifier>{4c2cc170-f9fd-4f26-9bd9-04f1ded254f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -237,6 +240,9 @@
     <ClInclude Include="Bubble.h">
       <Filter>03. Obj\11. Bubble</Filter>
     </ClInclude>
+    <ClInclude Include="NetworkMgr.h">
+      <Filter>02.Mgr\07. NetworMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -343,6 +349,9 @@
     </ClCompile>
     <ClCompile Include="Bubble.cpp">
       <Filter>03. Obj\11. Bubble</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkMgr.cpp">
+      <Filter>02.Mgr\07. NetworMgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

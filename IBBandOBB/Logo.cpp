@@ -91,7 +91,7 @@ CLogo::~CLogo()
 {
 }
 
-size_t __stdcall ImgLoadFunction(void* pArg)
+unsigned __stdcall ImgLoadFunction(void* pArg)
 {
 	CLogo*			pLogo = (CLogo*)pArg;
 
