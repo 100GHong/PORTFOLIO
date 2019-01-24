@@ -29,5 +29,12 @@
 	}
 
 #define ERR_MSG(Message)		MessageBox(g_hWnd, Message, L"System Error", NULL)
-
+#define ERROR_CHECK(x)			(x != 0)
 #define GET_TIME				CTimeMgr::GetInstance()->GetTime()
+
+#define GAME_PORT_FIRST			6658
+#ifndef CONCATENATE
+#define CONCATENATE( arg1, arg2 )   _CONCATENATE1( arg1, arg2 )
+#define _CONCATENATE1( arg1, arg2 )  _CONCATENATE2( arg1, arg2 )
+#define _CONCATENATE2( arg1, arg2 )  arg1##arg2
+#endif

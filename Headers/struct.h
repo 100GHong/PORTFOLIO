@@ -11,6 +11,19 @@ typedef struct tagInfo
 	WCHAR						StateKey[MIN_STR];
 }INFO;
 
+typedef struct tagServerData
+{
+	float			fPosX;
+	float			fPosY;
+	char			cState;// 0x00000000.  MSB°¡ state, LSB°¡ frame
+}SData;
+
+typedef struct tagClientData
+{
+	USHORT		m_iKey;
+	POINT		m_vMouse;
+}CData;
+
 typedef struct tagTexture
 {
 	LPDIRECT3DTEXTURE9		pTexture;

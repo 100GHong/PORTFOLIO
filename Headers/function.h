@@ -19,3 +19,29 @@ static D3DXVECTOR3	GetMouse(void)
 
 	return D3DXVECTOR3(float(Pt.x), float(Pt.y), 0.f);
 }
+
+static void ReportError(const WCHAR* inDescription)
+{
+	LPVOID lpMsgBuf;
+	DWORD errorNum = GetLastError();
+
+	FormatMessage(
+		FORMAT_MESSAGE_ALLOCATE_BUFFER |
+		FORMAT_MESSAGE_FROM_SYSTEM |
+		FORMAT_MESSAGE_IGNORE_INSERTS,
+		NULL,
+		errorNum,
+		MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
+		(LPTSTR)&lpMsgBuf,
+		0, NULL);
+
+	// Log
+	static WCHAR temp[4096];
+
+	va_list args;
+	va_start(args, inDescription);
+
+	_vsnwprintf_s(temp, 4096, 4096, inDescription, args);
+	OutputDebugString(temp);
+	OutputDebugString(_T("\n"));
+}

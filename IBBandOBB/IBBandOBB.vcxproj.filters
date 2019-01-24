@@ -124,6 +124,27 @@
     <Filter Include="02.Mgr\07. NetworMgr">
       <UniqueIdentifier>{4c2cc170-f9fd-4f26-9bd9-04f1ded254f4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="04. Network">
+      <UniqueIdentifier>{dd985704-e96f-44db-8626-0bc1b9ca21a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Network\Socket">
+      <UniqueIdentifier>{0c2358ce-1fa0-46b0-a010-32daa388ae1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\07. NetworMgr\Socket">
+      <UniqueIdentifier>{8d8d85cf-08ea-48f5-b14d-2c5e97d703dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\07. NetworMgr\CriticalSection">
+      <UniqueIdentifier>{8b05df2d-a72f-4c4b-86d2-b946009dab08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\07. NetworMgr\Thread">
+      <UniqueIdentifier>{087e804a-33c8-4a40-9a4a-f48d09a87dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\07. NetworMgr\Buffer">
+      <UniqueIdentifier>{fdcf81fb-47a0-45da-ac31-b5d124f4a2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Mgr\07. NetworMgr\Client">
+      <UniqueIdentifier>{43fedcce-5142-44ce-bc78-35cd3c987d2d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -243,6 +264,27 @@
     <ClInclude Include="NetworkMgr.h">
       <Filter>02.Mgr\07. NetworMgr</Filter>
     </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>02.Mgr\07. NetworMgr\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="CriticalSection.h">
+      <Filter>02.Mgr\07. NetworMgr\CriticalSection</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>02.Mgr\07. NetworMgr\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ListeningThread.h">
+      <Filter>02.Mgr\07. NetworMgr\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientThread.h">
+      <Filter>02.Mgr\07. NetworMgr\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="CBuffer.h">
+      <Filter>02.Mgr\07. NetworMgr\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>02.Mgr\07. NetworMgr\Client</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -352,6 +394,27 @@
     </ClCompile>
     <ClCompile Include="NetworkMgr.cpp">
       <Filter>02.Mgr\07. NetworMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>02.Mgr\07. NetworMgr\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="CriticalSection.cpp">
+      <Filter>02.Mgr\07. NetworMgr\CriticalSection</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>02.Mgr\07. NetworMgr\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ListeningThread.cpp">
+      <Filter>02.Mgr\07. NetworMgr\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientThread.cpp">
+      <Filter>02.Mgr\07. NetworMgr\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="CBuffer.cpp">
+      <Filter>02.Mgr\07. NetworMgr\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>02.Mgr\07. NetworMgr\Client</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
