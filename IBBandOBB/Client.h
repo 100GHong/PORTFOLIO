@@ -10,7 +10,8 @@ private:
 
 public:
 	CHARACTERID		getCharID() { return m_eCharacter;	}
-	CSocket*		getSocket() { return m_pSocket; }
+	void			setCharID(CHARACTERID eID) { m_eCharacter = eID; }
+	SOCKET*			getSocket() { return m_pSocket->GetSocket(); }
 
 public:
 	CClient(CSocket* pSocket);

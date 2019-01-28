@@ -31,6 +31,18 @@ int CSocket::Bind(const char * inAddr)
 	return Bind(addr);
 }
 
+int CSocket::Bind(ULONG inAddr)
+{
+	sockaddr_in	Addr;
+	Addr.sin_family = AF_INET;
+	Addr.sin_port = htons(GAME_PORT_FIRST);
+	Addr.sin_addr.S_un.S_addr = htonl(inAddr);
+
+	sockaddr	addr;
+	memcpy(&addr, &Addr, sizeof(sockaddr));
+	return Bind(addr);
+}
+
 int CSocket::Bind(const sockaddr & inAddr)
 {
 	int		iError = ::bind(m_Socket, &inAddr, sizeof(sockaddr));
@@ -60,7 +72,7 @@ CSocket * CSocket::Accept()
 	socklen_t	length = sizeof(sockaddr);
 	SOCKET		newSocket = accept(m_Socket, (SOCKADDR*)&inAddr, &length);
 
-	if (newSocket == INVALID_SOCKET)
+	if (newSocket != INVALID_SOCKET)
 		return new CSocket(newSocket, inAddr);
 	else
 	{

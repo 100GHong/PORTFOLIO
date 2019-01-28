@@ -50,12 +50,12 @@
 #include "SoundMgr.h"
 #include <io.h>
 //
-//#ifdef _DEBUG
-//#include <iostream>
-//#include <stdio.h>
-//#pragma comment(linker, "/entry:wWinMainCRTStartup /subsystem:console")
-//#endif
-//
-//#ifdef	_DEBUG
-//#define	new new(_CLIENT_BLOCK, __FILE__, __LINE__)
-//#endif // _DEBUG
+#ifdef _DEBUG
+#include <iostream>
+#include <stdio.h>
+#pragma comment(linker, "/entry:wWinMainCRTStartup /subsystem:console")
+#endif
+
+#ifdef	_DEBUG
+#define	new new(_CLIENT_BLOCK, __FILE__, __LINE__)
+#endif // _DEBUG

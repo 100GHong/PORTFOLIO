@@ -1,8 +1,12 @@
 #include "stdafx.h"
-#include "CriticalSection.h"
 #include "NetworkMgr.h"
+#include "CriticalSection.h"
 #include "ListeningThread.h"
 #include "ClientThread.h"
+#include "Thread.h"
+
+
+IMPLEMENT_SINGLETON(CNetworkMgr)
 
 void CNetworkMgr::Initialize()
 {
@@ -16,7 +20,8 @@ void CNetworkMgr::Initialize()
 
 	m_pListenThread = new ClisteningThread;
 
-	dynamic_cast<ClisteningThread*>(m_pListenThread)->ThreadRun();
+	m_pListenThread->BeginThread();
+	//dynamic_cast<ClisteningThread*>(m_pListenThread)->ThreadRun();
 	//socketAccepter.BindAndListen(5150, CreateUser);
 	//socketAccepter.BeginThread();
 
@@ -34,6 +39,12 @@ void CNetworkMgr::Update()
 void CNetworkMgr::Release()
 {
 	WSACleanup();
+	if (m_pOBBThread != nullptr)
+		Safe_Delete(m_pOBBThread);
+	if (m_pIBBThread != nullptr)
+		Safe_Delete(m_pIBBThread);
+	if (m_pListenThread != nullptr)
+		Safe_Delete(m_pListenThread);
 }
 
 bool CNetworkMgr::SetNewConnection(CSocket * pNewSocket)
@@ -58,8 +69,25 @@ void CNetworkMgr::NewConnectionUpdate()
 		m_pNewSocket = nullptr;
 	}
 	if (pNewThread == nullptr)
+	{
+		ReportError(_T("CNetworkMgr::NewConnectionUpdate::CClientThread"));
 		return;
+	}
 
+	if (m_pIBBThread == nullptr)
+	{
+		m_pIBBThread = pNewThread;
+		dynamic_cast<CClientThread*>(m_pIBBThread)->SetCharacterID(CHARACTERID::CHAR_IBB);
+		dynamic_cast<CClientThread*>(m_pIBBThread)->SetBuffer(&m_tBuffer);
+		dynamic_cast<CClientThread*>(m_pIBBThread)->BeginThread();
+	}
+	else if (m_pOBBThread == nullptr)
+	{
+		m_pOBBThread = pNewThread;
+		dynamic_cast<CClientThread*>(m_pOBBThread)->SetCharacterID(CHARACTERID::CHAR_OBB);
+		dynamic_cast<CClientThread*>(m_pOBBThread)->SetBuffer(&m_tBuffer);
+		dynamic_cast<CClientThread*>(m_pOBBThread)->BeginThread();
+	}
 }
 
 CNetworkMgr::CNetworkMgr()

@@ -13,9 +13,12 @@ typedef struct tagInfo
 
 typedef struct tagServerData
 {
-	float			fPosX;
-	float			fPosY;
-	char			cState;// 0x00000000.  MSB가 state, LSB가 frame
+	float			fIBBPosX;
+	float			fIBBPosY;
+	char			cIBBState;// 0x00000000.  MSB가 state, LSB가 frame
+	float			fOBBPosX;
+	float			fOBBPosY;
+	char			cOBBState;// 0x00000000.  MSB가 state, LSB가 frame
 }SData;
 
 typedef struct tagClientData

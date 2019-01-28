@@ -4,14 +4,22 @@
 
 class CClient;
 class CSocket;
+class CBuffer;
 
 class CClientThread : public CThread
 {
 private:
 	CClient*			m_pClient;
+	bool				m_bReceived;
+	CBuffer*			m_pBuffer;
 
 public:
-	virtual void ThreadRun() override;
+	void				SetBuffer(CBuffer* pBuffer) { m_pBuffer = pBuffer; }
+	void				SetCharacterID(CHARACTERID eID);
+	virtual void		ThreadRun() override;
+
+private:
+	void				GetDatafromBuffer();
 
 public:
 	CClientThread(CSocket* pSocket);

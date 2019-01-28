@@ -2,8 +2,8 @@
 
 #include "Include.h"
 #include "CBuffer.h"
-#include "Thread.h"
 #include "Socket.h"
+class CThread;
 
 class CNetworkMgr
 {
@@ -11,11 +11,13 @@ class CNetworkMgr
 private:
 	WSADATA              m_wsaData;
 	CBuffer				 m_tBuffer;
+	CSocket*			 m_pNewSocket = nullptr;
+	CRITICAL_SECTION	 m_cs;
+
+	// Threads
 	CThread*			 m_pListenThread = nullptr;
 	CThread*			 m_pIBBThread = nullptr;
 	CThread*			 m_pOBBThread = nullptr;
-	CSocket*			 m_pNewSocket = nullptr;
-	CRITICAL_SECTION	 m_cs;
 
 public:
 	void		Initialize();

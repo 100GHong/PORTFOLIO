@@ -48,4 +48,5 @@ CThread::CThread()
 
 CThread::~CThread()
 {
+	EndThread();
 }

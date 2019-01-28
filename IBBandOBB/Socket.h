@@ -8,6 +8,7 @@ public:
 	int				Connect(const  sockaddr& inAddr);
 	int				Bind(const char* inAddr);
 	int				Bind(const sockaddr& inAddr);
+	int				Bind(ULONG inAddr);
 	int				Listen(int	inBackLog = SOMAXCONN);
 	CSocket*		Accept();
 	int32_t			Send(const void* inData, size_t inLen);
@@ -19,6 +20,7 @@ public:
 
 	unsigned int    GetIp() const { return m_SockAddr.sin_addr.S_un.S_addr; }
 	unsigned short	GetPort() const { return ntohs(m_SockAddr.sin_port); }
+	SOCKET*			GetSocket() { return &m_Socket; }
 
 	bool            IsConnected() const { return m_Socket != INVALID_SOCKET; }
 private:

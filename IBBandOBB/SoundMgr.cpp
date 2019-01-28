@@ -72,6 +72,11 @@ void CSoundMgr::LoadSoundFile()
 			MultiByteToWideChar(CP_ACP, 0, tFindData.name, strlen(tFindData.name) + 1
 				, pSoundKey, strlen(tFindData.name) + 1);
 
+			if (m_MapSound.find(pSoundKey) != m_MapSound.end())
+			{
+				delete pSoundKey;
+				continue;
+			}
 			m_MapSound.insert(make_pair(pSoundKey, pSound));
 		}
 

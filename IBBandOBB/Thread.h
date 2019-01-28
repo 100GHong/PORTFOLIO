@@ -8,7 +8,7 @@ protected:
 	HANDLE				m_hThreadEvent;
 	DWORD				m_dwThreadId = 0;
 
-protected:
+public:
 	virtual bool		BeginThread();
 	virtual	void		EndThread(DWORD dwTimeout = 0);
 	virtual void        ThreadRun() PURE;

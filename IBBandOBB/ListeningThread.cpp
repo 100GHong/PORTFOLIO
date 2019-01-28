@@ -40,12 +40,12 @@ void ClisteningThread::ThreadRun()
 				if (dwElapsedTime > 3000)
 				{
 					Safe_Delete(pNewSocket);
+					ReportError(_T("ClisteningThread::SetNewConnection"));
 					break;
 				}
 				Sleep(5);
 			}
 		}
-			
 	}
 	
 		

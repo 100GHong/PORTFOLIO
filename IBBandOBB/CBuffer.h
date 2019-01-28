@@ -4,9 +4,15 @@
 class CBuffer
 {
 private:						// Server to Client
-	SData		m_sIBB;
-	SData		m_sOBB;
+	CRITICAL_SECTION	m_csSData;
+	SData				m_sData;
 								// Client to Server
-	CData		m_cIBB;
-	CData		m_cOBB;
+	CRITICAL_SECTION	m_csIBBData;
+	CData				m_cIBB;
+	CRITICAL_SECTION	m_csOBBData;
+	CData				m_cOBB;
+
+public:
+	SData				GetSData();
+	void				SetCData(CData data, CHARACTERID eId);
 };

@@ -21,6 +21,7 @@ HRESULT CMainGame::Initialize(void)
 	g_vScroll = { 0.f, -300.f, 0.f };
 
 	CSoundMgr::GetInst()->LoadSoundFile();
+	m_pNetworkMgr->Initialize();
 
 	ShowCursor(false);
 
@@ -31,6 +32,7 @@ void CMainGame::Progress(void)
 {
 	CSoundMgr::GetInst()->Update();
 	CTimeMgr::GetInstance()->SetTime();
+	m_pNetworkMgr->Update();
 	m_pSceneMgr->Progress();
 
 
@@ -81,6 +83,8 @@ void CMainGame::Release(void)
 	CSoundMgr::GetInst()->DestroyInst();
 	m_pSceneMgr->DestroyInstance();
 	m_pDevice->DestroyInstance();
+
+	m_pNetworkMgr->DestroyInstance();
 }
 
 CMainGame::CMainGame()

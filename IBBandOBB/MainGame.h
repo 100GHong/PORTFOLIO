@@ -1,6 +1,7 @@
 #include "Include.h"
 #include "Device.h"
 #include "SceneMgr.h"
+#include "NetworkMgr.h"
 
 #pragma once
 class CMainGame
@@ -8,6 +9,7 @@ class CMainGame
 private:
 	CDevice*	m_pDevice = CDevice::GetInstance();
 	CSceneMgr*  m_pSceneMgr = CSceneMgr::GetInstance();
+	CNetworkMgr* m_pNetworkMgr = CNetworkMgr::GetInstance();
 
 	float m_fTime = 0.f;
 	D3DXMATRIX		m_matTrans;
