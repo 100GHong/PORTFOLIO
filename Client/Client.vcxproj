@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{335BD3E1-82F2-4372-8762-276C36708930}</ProjectGuid>
+    <ProjectGuid>{131D7B44-0C18-4655-A28E-DBD1A13A804F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>IBBandOBB</RootNamespace>
+    <RootNamespace>Client</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>Client</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -260,10 +261,10 @@
     <ClCompile Include="Track.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="IBBandOBB.rc" />
+    <ResourceCompile Include="Client.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="IBBandOBB.ico" />
+    <Image Include="Client.ico" />
     <Image Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
